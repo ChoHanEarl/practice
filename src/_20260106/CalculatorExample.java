@@ -16,6 +16,7 @@ public class CalculatorExample {
 		System.out.println("result2: " + result2);
 		
 		myCalc.powerOff();
+		
 	}
 	//전원을 켭니다.
 	//result1: 11
