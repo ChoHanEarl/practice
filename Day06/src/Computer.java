@@ -9,13 +9,15 @@ public class Computer {
 		return z;
 	}
 
-	public int sum2(int a, int b, int c) {
-		return a+b+c;
-	}
+	public int sum2(int... values) {
+        int sum = 0;
 
-	
+        // values는 내부에서 '배열(int[])'처럼 쓰입니다.
+        for (int i : values) {
+            sum += i;
+        }
 
-	public int sum2(int a, int b, int c, int d, int e){
-		return a+b+c+d+e;
-	}
+        return sum;
+    }
 }
+
